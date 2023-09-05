@@ -1,0 +1,40 @@
+{
+    "input_variables": [
+        "input"
+    ],
+    "output_parser": null,
+    "partial_variables": {},
+    "examples": [
+        {
+            "animal": "lion",
+            "habitat": "savanna"
+        },
+        {
+            "animal": "polar bear",
+            "habitat": "Arctic ice"
+        },
+        {
+            "animal": "elephant",
+            "habitat": "African grasslands"
+        }
+    ],
+    "example_selector": null,
+    "validate_template": true,
+    "example_prompt": {
+        "input_variables": [
+            "animal",
+            "habitat"
+        ],
+        "output_parser": null,
+        "partial_variables": {},
+        "template": "\nAnimal: {animal}\nHabitat: {habitat}\n",
+        "template_format": "f-string",
+        "validate_template": true,
+        "_type": "prompt"
+    },
+    "suffix": "Animal: {input}\nHabitat: ",
+    "example_separator": "\n\n",
+    "prefix": "Identify the habitat of the given animal",
+    "template_format": "f-string",
+    "_type": "few_shot"
+}
